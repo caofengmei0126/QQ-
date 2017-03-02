@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script>
+        var winWidth = document.documentElement.clientWidth|| document.body.clientWidth;
+        document.documentElement.style.fontSize = winWidth / 640 *100 +"px";
+        window.htmlFontSize = winWidth / 640 *100;
+    </script>
+</head>
+<body>
+<div class="musicBox">
+    <audio src="images/demom4a" style="display: none" preload="none"></audio>
+    <div class="musicBg"></div>
+    <div class="header">
+        <div class="musicInfo">
+            <div><img src="images/poster.jpg" alt=""></div>
+            <div>
+                <p>模特</p>
+                <p>李荣浩</p>
+            </div>
+        </div>
+        <div class="musicBtn">
+            <a class="play" href="javascript:;"></a>
+            <a class="paused" href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="lyric">
+            <p class="cur">模特</p>
+            <p>词：周耀辉</p>
+            <p>曲：李荣浩</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="collection">
+            <a href="javascript:;"></a>
+        </div>
+        <div class=" progress">
+            <div class="currentTime">00:00</div>
+            <div class="progressBar"><span></span></div>
+            <div class="totalTime"></div>
+        </div>
+        <div class="download">
+            <a href="javascript:;">下载这首歌</a>;
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

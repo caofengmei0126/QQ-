@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+html{
+    font-size: 100px;
+}
+.musicBox{
+    width: 100%;
+    height: 100%;
+   position: relative;
+}
+.musicBox .musicBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background: url("../images/poster.jpg") no-repeat;
+    background-size:cover;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    z-index: -1;
+}
+.musicBox .header{
+    height: 1.2rem;
+    padding: 0.3rem;
+    background: rgba(0,0,0,0.1);
+    position: relative;
+}
+.header .musicInfo{
+    height: 1.2rem;
+}
+.header .musicInfo div:nth-child(1){
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.header .musicInfo div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    vertical-align: top;
+}
+.header .musicInfo div:nth-child(2){
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+.header .musicInfo div:nth-child(2) p{
+    height: 0.6rem;
+    color: #ffffff;
+    font-size: 0.36rem;
+}
+.header .musicBtn{
+    position: absolute;
+    right: 0.3rem;
+    top:50%;
+    margin-top: -0.45rem;
+    width:0.9rem;
+    height: 0.9rem;
+    border: 0.03rem solid #ffffff;
+    border-radius: 50%;
+}
+.musicBtn .play{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.musicBtn .play:after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.2rem solid transparent;
+    border-left-color: #ffffff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -0.1rem;
+    margin-top: -0.2rem;
+}
+.musicBtn .paused{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.musicBtn .paused:after{
+    position: absolute;
+    content: "| |";
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    left: 50%;
+    top:50%;
+    color: #ffffff;
+    margin-left: -0.2rem;
+    margin-top: -0.2rem;
+    font-size: 0.36rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.musicBox .main{
+    position: relative;
+    height: 6rem;
+    margin: 0.4rem 0.2rem;
+    overflow: hidden;
+}
+.main .lyric{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.main .lyric p{
+    height: 0.84rem;
+    line-height: 0.84rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.04rem;
+    text-align: center;
+    font-size: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main .lyric p.cur{
+    color: #31c27c;
+}
+.musicBox .footer{
+    height: 3rem;
+    margin: 0 0.2rem;
+}
+.musicBox .footer .collection{
+    height: 0.8rem;
+    position: relative;
+}
+.footer .collection a{
+    display: block;
+    width: 0.5rem;
+    height: 0.42rem;
+    position:absolute;
+    right: 0;
+    top:50%;
+    margin-top: -0.21rem;
+    background: url("../images/sprite_play.png") no-repeat;
+    background-size:0.8rem 7rem;
+}
+.footer .progress{
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+.footer .progress .currentTime{
+    width: 0.9rem;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.24rem;
+    float: left;
+}
+.footer .progress .totalTime{
+    width: 0.9rem;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.24rem;
+    float: right;
+}
+.footer .progress .progressBar{
+    width: 4.2rem;
+    height: 0.04rem;
+    position: relative;
+    margin-top: 0.38rem;
+    background: rgba(255,255,255,0.5);
+    float: left;
+}
+.footer .progress .progressBar span{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    background: #31c27c;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.footer .download{
+    height: 0.9rem;
+}
+.footer .download a{
+    position: relative;
+    display: block;
+    width: 4.4rem;
+    height: 0.9rem;
+    text-align: center;
+    background: #31c27c;
+    line-height: 0.9rem;
+    margin: 0 auto;
+    border-radius: 0.45rem;
+    color: #ffffff;
+    font-size: 0.36rem;
+}
+.footer .download a:after{
+    content: "";
+    display: block;
+    width: 0.66rem;
+    height: 0.66rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.12rem;
+    top:50%;
+    margin-top: -0.33rem;
+    background: url("../images/sprite_play.png") no-repeat;
+    background-position: 0 -6rem;
+    background-size: 0.8rem 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
